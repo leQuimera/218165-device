@@ -9,42 +9,56 @@
 
 <body>
   <svg style="display:none">
-    <symbol id="logo-device"></symbol>
-    <symbol id="compare"></symbol>
-    <symbol id="cart"></symbol>
-    <symbol id="user"></symbol>
+    <symbol id="compare" viewBox="0 0 10 10">
+      <title>compare</title>
+      <rect x="8" y="2" width="1.984" height="8"/>
+      <rect y="3" width="1.984" height="7"/>
+      <rect x="4" width="2" height="10"/>
+    </symbol>
+    <symbol id="cart" viewBox="0 0 12 12">
+      <title>cart</title>
+      <path d="M11.864,3.017c-0.082-0.098-0.203-0.154-0.327-0.154H9.225V4.09c0,0.563-0.484,1.022-1.08,1.022
+      c-0.594,0-1.078-0.458-1.078-1.022V2.863H4.909V4.09c0,0.563-0.485,1.022-1.08,1.022c-0.595,0-1.078-0.458-1.078-1.022V2.863H0.438
+      c-0.125,0-0.243,0.056-0.327,0.154C0.028,3.115-0.012,3.245,0.003,3.375l0.776,7.134c0.015,0.806,0.642,1.455,1.411,1.455h7.595
+      c0.77,0,1.396-0.649,1.411-1.455l0.776-7.134C11.987,3.245,11.946,3.115,11.864,3.017z"/>
+      <path d="M3.829,4.499c0.239,0,0.433-0.184,0.433-0.409V1.84c0-0.632,0.672-1.022,1.295-1.022h1.079
+      c0.655,0,1.078,0.401,1.078,1.022v2.25c0,0.225,0.194,0.409,0.431,0.409c0.239,0,0.433-0.184,0.433-0.409V1.84
+      C8.577,0.773,7.761,0,6.636,0H5.557C4.367,0,3.398,0.826,3.398,1.84v2.25C3.398,4.315,3.592,4.499,3.829,4.499z"/>
+    </symbol>
+    <symbol id="user" viewBox="0 0 13 12">
+      <title>user</title>
+      <path fill="#272525" d="M0.032,12h12.937c-0.163-2.643-2.074-4.837-4.671-5.543C9.306,5.846,9.985,4.75,9.985,3.485
+      C9.985,1.561,8.425,0,6.5,0S3.015,1.561,3.015,3.485c0,1.264,0.68,2.361,1.688,2.972C2.106,7.163,0.194,9.357,0.032,12z"/>
+    </symbol>
   </svg>
 
   <header class="header-main">
-    <a>
-      <svg width="164" height="36" class="header-main__logo">
-        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#logo-device"></use>
-      </svg>
-      <span class="visually-hidden">Device</span>
-    </a>
+    <a class="header-main__logo">Device</a>
     <div class="header-info">
-      <form class="header-info__form" action="https://echo.htmlacademy.ru" method="get">
-        <input type="search" name="search-field" placeholder="Поиск по сайту">
-        <input type="submit" value="Найти">
+      <form action="https://echo.htmlacademy.ru" method="get">
+        <div class="header-info__form">
+          <input type="search" name="search-field" placeholder="Поиск по сайту">
+          <input type="submit" value="Найти">
+        </div>
       </form>
       <ul class="header-services">
         <li class="header-services__item">
-          <svg width="12" height="12" class="ico-user">
+          <svg width="12" height="12" class="header-services__ico">
             <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#user"></use>
           </svg>
-          <a href="#" class="header-services__link header-services__link--enter">Войти</a>
+          <a href="#" class="header-services__link">Войти</a>
         </li>
         <li class="header-services__item">
-          <svg width="12" height="12" class="ico-compare">
+          <svg width="12" height="12" class="header-services__ico">
             <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#compare"></use>
           </svg>
-          <a href="#" class="header-services__link header-services__link--compare">Сравнить</a>
+          <a href="#" class="header-services__link">Сравнить</a>
         </li>
-        <li>
-          <svg width="12" height="12" class="ico-cart">
+        <li class="header-services__item">
+          <svg width="12" height="12" class="header-services__ico">
             <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#cart"></use>
           </svg>
-          <a href="#" class="header-services__link header-services__link--bask">Корзина</a>
+          <a href="#" class="header-services__link">Корзина</a>
         </li>
       </ul>
     </div>
@@ -52,16 +66,16 @@
       <a href="#" class="header-nav__item header-nav__item--catalog">Каталог товаров</a>
       <ul class="header-menu">
         <li class="header-menu__item">
-          <a href="#">Виртуальная реальность</a>
+          <a href="catalog.html">Виртуальная реальность</a>
           <a  href="catalog.html">Моноподы для селфи</a>
-          <a href="#">Экшн-камеры</a>
+          <a href="catalog.html">Экшн-камеры</a>
         </li>
         <li class="header-menu__item">
-          <a href="#">Фитнес-браслеты</a>
-          <a href="#">Умные часы</a>
+          <a href="catalog.html">Фитнес-браслеты</a>
+          <a href="catalog.html">Умные часы</a>
         </li>
         <li class="header-menu__item">
-          <a href="#">Квадрокоптеры</a>
+          <a href="catalog.html">Квадрокоптеры</a>
         </li>
       </ul>
       <a href="#" class="header-nav__item header-nav__item--delivery">Доставка</a>
@@ -89,22 +103,20 @@
             <h3>Делай селфи,<br> как Бен Стиллер!</h3>
             <p>Самая длинная палка для селфи доступна в нашем магазине. <br>Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
             <a href="#" class="slider__btn btn">Подробнее</a>
-            <div class="slider__desc">
-              <ul class="slider__desc">
-                <li>
-                  <p class="slider__value">8,5 м</p>
-                  <p class="slider__legend">Длина палки</p>
-                </li>
-                <li>
-                  <p class="slider__value">5 кг</p>
-                  <p class="slider__legend">Вес палки</p>
-                </li>
-                <li>
-                  <p class="slider__value">Карбон</p>
-                  <p class="slider__legend">Материал</p>
-                </li>
-              </ul>
-            </div>
+            <ul class="slider__desc">
+              <li>
+                <p class="slider__value">8,5 м</p>
+                <p class="slider__legend">Длина палки</p>
+              </li>
+              <li>
+                <p class="slider__value">5 кг</p>
+                <p class="slider__legend">Вес палки</p>
+              </li>
+              <li>
+                <p class="slider__value">Карбон</p>
+                <p class="slider__legend">Материал</p>
+              </li>
+            </ul>
           </div>
         </li>
         <li class="slider__item">
@@ -115,14 +127,12 @@
             <h3>Худеем<br>правильно!</h3>
             <p>Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
             <a href="#" class="slider__btn btn">Подробнее</a>
-            <div class="slider__desc">
-              <ul class="slider__desc">
-                <li>
-                  <p class="slider__value">48 часов</p>
-                  <p class="slider__legend">Без подзарядки</p>
-                </li>
-              </ul>
-            </div>
+            <ul class="slider__desc">
+              <li>
+                <p class="slider__value">48 часов</p>
+                <p class="slider__legend">Без подзарядки</p>
+              </li>
+            </ul>
           </div>
         </li>
         <li class="slider__item">
@@ -133,54 +143,28 @@
             <h3>Порхает как бабочка,<br>жалит как пчела!</h3>
             <p>Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
             <a href="#" class="slider__btn btn">Подробнее</a>
-            <div class="slider__desc">
-              <ul class="slider__desc">
-                <li>
-                  <p class="slider__value">800 м</p>
-                  <p class="slider__legend">Дальность полета</p>
-                </li>
-                <li>
-                  <p class="slider__value">50 м</p>
-                  <p class="slider__legend">Радиус поражения</p>
-                </li>
-              </ul>
-            </div>
+            <ul class="slider__desc">
+              <li>
+                <p class="slider__value">800 м</p>
+                <p class="slider__legend">Дальность полета</p>
+              </li>
+              <li>
+                <p class="slider__value">50 м</p>
+                <p class="slider__legend">Радиус поражения</p>
+              </li>
+            </ul>
           </div>
         </li>
       </ol>
     </section>
     <section class="shop">
       <ul class="shop__list">
-        <li>
-          <a href="catalog.html" class="shop__item shop__item--real">
-            Виртуальная реальность
-          </a>
-        </li>
-        <li>
-          <a href="catalog.html" class="shop__item shop__item--mono">
-            Моноподы<br>для селфи
-          </a>
-        </li>
-        <li>
-          <a href="catalog.html" class="shop__item shop__item--cam">
-            Экшн-камеры
-          </a>
-        </li>
-        <li>
-          <a href="catalog.html" class="shop__item shop__item--jav">
-            Фитнес-браслеты
-          </a>
-        </li>
-        <li>
-          <a href="catalog.html" class="shop__item shop__item--watch">
-            Умные часы
-          </a>
-        </li>
-        <li>
-          <a href="catalog.html" class="shop__item shop__item--quadro">
-            Квадракоптеры
-          </a>
-        </li>
+        <li><a href="catalog.html" class="shop__item shop__item--real">Виртуальная реальность</a></li>
+        <li><a href="catalog.html" class="shop__item shop__item--mono">Моноподы<br>для селфи</a></li>
+        <li><a href="catalog.html" class="shop__item shop__item--cam">Экшн-камеры</a></li>
+        <li><a href="catalog.html" class="shop__item shop__item--jav">Фитнес-браслеты</a></li>
+        <li><a href="catalog.html" class="shop__item shop__item--watch">Умные часы</a></li>
+        <li><a href="catalog.html" class="shop__item shop__item--quadro">Квадракоптеры</a></li>
       </ul>
     </section>
     <section class="support">
@@ -219,7 +203,7 @@
       <div class="info__about">
         <h2>О нас</h2>
         <p>Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
-        <p>Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими транспортными компаниями</p>
+        <p>Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими транспортными компаниями:</p>
         <ul class="info__transport">
           <li>Деловые Линии</li>
           <li>Автотрейдинг</li>
@@ -230,7 +214,7 @@
       <div class="info__adress">
         <h2>Контакты</h2>
         <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
-        <a  href="map.html" class="info__map" id="js-map-open">
+        <a href="map.html" class="info__map" id="js-map-open">
           <img src="img/map.jpg" alt="Где мы находимся" width="560" height="222">
         </a>
         <a href="feedback.html" class="info__btn btn" id="js-open-feedback">Напишите нам</a>
@@ -240,12 +224,7 @@
   <footer class="footer-main">
     <div class="footer-main__wrap">
       <div class="footer-main__info">
-        <a>
-          <svg width="164" height="36" class="footer-main__logo">
-            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#logo-device"></use>
-          </svg>
-          <span class="visually-hidden">Device</span>
-        </a>
+        <a class="footer-main__logo">Device</a>
         <ul class="footer-main__services">
           <li>
             <svg width="12" height="12" class="footer-main__ico-user">
@@ -269,22 +248,22 @@
       </div>
       <div class="footer-main__contacts">
         <span>г. Москва, ул. Строителей, 15</span>
-        <nav class="footer-nav">
+        <div class="footer-nav">
           <a href="#" class="footer-nav__item footer-nav__item--delivery">Доставка</a>
           <a href="#" class="footer-nav__item footer-nav__item--insurance">Гарантия</a>
           <a href="#" class="footer-nav__item footer-nav__item--contacts">Контакты</a>
-        </nav>
-        <span>Тел.: +7 (495) 495-95-95</span>
+        </div>
+        <a href="tel:+74954959595">Тел.: +7 (495) 495-95-95</a>
       </div>
       <div class="footer-social">
         <div class="footer-social__wrap">
-          <a href="https://www.facebook.com/" class="footer-social__linck footer-social__linck--fb">
+          <a href="https://www.facebook.com/" class="footer-social__linck footer-social__linck--fb"  target="_blank">
             <span class="visually-hidden">Facebook</span>
           </a>
-          <a href="https://www.instagram.com/" class="footer-social__linck footer-social__linck--ig">
+          <a href="https://www.instagram.com/" class="footer-social__linck footer-social__linck--ig"  target="_blank">
             <span class="visually-hidden">Instagram</span>
           </a>
-          <a href="https://twitter.com/" class="footer-social__linck footer-social__linck--tw">
+          <a href="https://twitter.com/" class="footer-social__linck footer-social__linck--tw"  target="_blank">
             <span class="visually-hidden">Twitter</span>
           </a>
         </div>
@@ -293,7 +272,7 @@
     </div>
   </footer>
 
-  <div class="modal">
+  <div class="modal-feedback">
     <div class="modal__shadow"></div>
     <div class="modal__wrapper">
       <button class="modal-btn__close" id="js-modal-close" type="button" title="Закрыть"><span class="visually-hidden">Закрыть</span></button>
@@ -316,7 +295,8 @@
 
   <div class="modal-map">
     <button class="modal-btn__close" id="js-map-close" type="button" title="Закрыть"><span class="visually-hidden">Закрыть</span></button>
-    <div class="modal-map__placeholder"></div>
+    <div class="modal-map__placeholder" id="map">
+    </div>
   </div>
 
 </body>

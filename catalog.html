@@ -16,35 +16,32 @@
   </svg>
 
   <header class="header-main header-main__catalog">
-    <a href="index.html">
-      <svg width="164" height="36" class="header-main__logo">
-        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#logo-device"></use>
-      </svg>
-      <span class="visually-hidden">Device</span>
-    </a>
+    <a href="index.html" class="header-main__logo">Device</a>
     <div class="header-info">
-      <form class="header-info__form" action="https://echo.htmlacademy.ru" method="get">
-        <input type="search" name="search-field" placeholder="Поиск по сайту">
-        <input type="submit" value="Найти">
+      <form action="https://echo.htmlacademy.ru" method="get">
+        <div class="header-info__form">
+          <input type="search" name="search-field" placeholder="Поиск по сайту">
+          <input type="submit" value="Найти">
+        </div>
       </form>
       <ul class="header-services">
         <li class="header-services__item">
-          <svg width="12" height="12" class="ico-user">
+          <svg width="12" height="12" class="header-services__ico header-services__ico--user">
             <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#user"></use>
           </svg>
-          <a href="#" class="header-services__link header-services__link--name">Валентин Петухов</a>
+          <a href="profile.html" class="header-services__link header-services__link--name">Валентин Петухов</a>
         </li>
-        <li class="header-services__item">
+        <li class="header-services__item header-services__item--out">
           <a href="#" class="header-services__link header-services__link--out">Выйти</a>
         </li>
         <li class="header-services__item">
-          <svg width="12" height="12" class="ico-compare">
+          <svg width="12" height="12" class="header-services__ico header-services__ico--compare">
             <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#compare"></use>
           </svg>
           <a href="#" class="header-services__link header-services__link--compare">Сравнить</a>
         </li>
-        <li>
-          <svg width="12" height="12" class="ico-cart">
+        <li class="header-services__item">
+          <svg width="12" height="12" class="header-services__ico header-services__ico--cart">
             <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#cart"></use>
           </svg>
           <a href="#" class="header-services__link header-services__link--bask">Корзина</a>
@@ -89,7 +86,7 @@
             <h3 class="filter-set__title">Стоимость</h3>
             <div class="filer-range__control">
               <div class="filer-range__scale">
-                <div style="width: 60%;" class="filer-range__bar"></div>
+                <div class="filer-range__bar"></div>
               </div>
               <div class="filer-range__toggle filer-range__toggle--min"></div>
               <div class="filer-range__toggle filer-range__toggle--max"></div>
@@ -128,7 +125,7 @@
             <h3 class="filter-set__title">Bluetooth</h3>
             <ul>
               <li>
-              <input class="visually-hidden" type="radio" id="filter-bluetooth-yes" name="filter-bluetooth-toggle" value="yes" checked>
+                <input class="visually-hidden" type="radio" id="filter-bluetooth-yes" name="filter-bluetooth-toggle" value="yes" checked>
                 <label for="filter-bluetooth-yes">Есть</label>
               </li>
               <li>
@@ -158,8 +155,8 @@
             <article class="catalog-item">
               <img src="img/item_01.jpg" width="360" height="380" alt="Любительская селфи-палка">
               <div class="catalog-item__hover">
-                <a class="btn" href="#">В корзину</a>
-                <a class="catalog-item__compare" href="#">Добавить к сравнению</a>
+                <a href="#" class="btn">В корзину</a>
+                <a href="#" class="catalog-item__compare">Добавить к сравнению</a>
               </div>
               <div class="catalog-item__info">
                 <a href="#" class="catalog-item__title">Любительская селфи-палка</a>
@@ -169,8 +166,8 @@
             <article class="catalog-item">
               <img src="img/item_02.jpg" width="360" height="380" alt="Профессиональная селфи-палка">
               <div class="catalog-item__hover">
-                <a class="btn" href="#">В корзину</a>
-                <a class="catalog-item__compare" href="#">Добавить к сравнению</a>
+                <a href="#" class="btn">В корзину</a>
+                <a href="#" class="catalog-item__compare">Добавить к сравнению</a>
               </div>
               <div class="catalog-item__info">
                 <a href="#" class="catalog-item__title">Профессиональная селфи-палка</a>
@@ -180,8 +177,8 @@
             <article class="catalog-item">
               <img src="img/item_03.jpg" width="360" height="380" alt="Непотопляемая селфи-палка">
               <div class="catalog-item__hover">
-                <a class="btn" href="#">В корзину</a>
-                <a class="catalog-item__compare" href="#">Добавить к сравнению</a>
+                <a href="#" class="btn">В корзину</a>
+                <a href="#" class="catalog-item__compare">Добавить к сравнению</a>
               </div>
               <div class="catalog-item__info">
                 <a href="#" class="catalog-item__title">Непотопляемая селфи-палка</a>
@@ -191,8 +188,8 @@
             <article class="catalog-item catalog-item__new">
               <img src="img/item_04.jpg" width="360" height="380" alt="Селфи-палка &laquo;Следуй за мной&raquo;">
               <div class="catalog-item__hover">
-                <a class="btn" href="#">В корзину</a>
-                <a class="catalog-item__compare" href="#">Добавить к сравнению</a>
+                <a href="#" class="btn">В корзину</a>
+                <a href="#" class="catalog-item__compare">Добавить к сравнению</a>
               </div>
               <div class="catalog-item__info">
                 <a href="#" class="catalog-item__title">Селфи-палка &laquo;Следуй за мной&raquo;</a>
@@ -201,11 +198,11 @@
             </article>
           </div>
           <ul class="paginator">
-            <li><a class="paginator__prev" href="#">Назад</a></li>
+            <li><a class="paginator__prev">Назад</a></li>
             <li><a class="paginator__active">1</a></li>
             <li><a href="#">2</a></li>
             <li><a href="#">3</a></li>
-            <li><a class="paginator__next" href="#">Вперед</a></li>
+            <li><a href="#" class="paginator__next">Вперед</a></li>
           </ul>
         </div>
       </section>
@@ -243,22 +240,22 @@
       </div>
       <div class="footer-main__contacts">
         <span>г. Москва, ул. Строителей, 15</span>
-        <nav class="footer-nav">
+        <div class="footer-nav">
           <a href="#" class="footer-nav__item footer-nav__item--delivery">Доставка</a>
           <a href="#" class="footer-nav__item footer-nav__item--insurance">Гарантия</a>
           <a href="#" class="footer-nav__item footer-nav__item--contacts">Контакты</a>
-        </nav>
-        <span>Тел.: +7 (495) 495-95-95</span>
+        </div>
+        <a href="tel:+74954959595">Тел.: +7 (495) 495-95-95</a>
       </div>
       <div class="footer-social">
         <div class="footer-social__wrap">
-          <a href="https://www.facebook.com/" class="footer-social__linck footer-social__linck--fb">
+          <a href="https://www.facebook.com/" class="footer-social__linck footer-social__linck--fb" target="_blank">
             <span class="visually-hidden">Facebook</span>
           </a>
-          <a href="https://www.instagram.com/" class="footer-social__linck footer-social__linck--ig">
+          <a href="https://www.instagram.com/" class="footer-social__linck footer-social__linck--ig" target="_blank">
             <span class="visually-hidden">Instagram</span>
           </a>
-          <a href="https://twitter.com/" class="footer-social__linck footer-social__linck--tw">
+          <a href="https://twitter.com/" class="footer-social__linck footer-social__linck--tw" target="_blank">
             <span class="visually-hidden">Twitter</span>
           </a>
         </div>
