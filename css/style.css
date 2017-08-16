@@ -100,7 +100,6 @@ body {
 /* ********************************************************** */
 /* *********               Шапка                 ************ */
 /* ********************************************************** */
-
 .header-main {
   width: 1160px;
   margin: 0 auto;
@@ -643,7 +642,6 @@ a.header-menu__item--active:active {
 /* ********************************************************** */
 /* *********   Нижний слайдер - блок услуг       ************ */
 /* ********************************************************** */
-
 .support {
   width: 100%;
   min-height: 290px;
@@ -676,6 +674,7 @@ a.header-menu__item--active:active {
   min-height: 320px;
   background-color: #000;
 }
+
 /*  Стилизация кнопок  */
 .support__nav label {
   position: relative;
@@ -800,6 +799,7 @@ a.header-menu__item--active:active {
   height: 188px;
   background: url(../img/credit.svg) no-repeat;
 }
+
 /* ********************************************************** */
 /* *********              Партенры               ************ */
 /* ********************************************************** */
@@ -864,14 +864,12 @@ a.header-menu__item--active:active {
 /* ********************************************************** */
 /* *********            Блок информации          ************ */
 /* ********************************************************** */
-
-
 .info {
   display: flex;
   justify-content: space-between;
   width: 1160px;
   margin: 0 auto;
-  margin-bottom: 84px;
+  margin-bottom: 82px;
 }
 
 .info__about,
@@ -970,6 +968,7 @@ a.header-menu__item--active:active {
   width: 100%;
   padding-top: 42px;
   background-color: #464646;
+  color: #fff;
 }
 
 .footer-main__wrap {
@@ -986,7 +985,7 @@ a.header-menu__item--active:active {
   display: flex;
   justify-content: space-between;
   padding-top: 15px;
-  margin-bottom: 22px;
+  margin-bottom: 19px;
 }
 
 .footer-main__logo {
@@ -998,14 +997,6 @@ a.header-menu__item--active:active {
   letter-spacing: 0.01em;
   text-transform: uppercase;
   color: #FFC600;
-}
-
-.footer-main__logo:hover {
-  opacity: 0.6;
-}
-
-.footer-main__logo:active {
-  opacity: 0.3;
 }
 
 .footer-main__wrap::after {
@@ -1024,15 +1015,139 @@ a.header-menu__item--active:active {
   width: 510px;
   margin: 0;
   padding: 0;
-  padding-top: 16px;
+  padding-top: 2px;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: flex-start;
   flex-wrap: wrap;
+}
+
+.footer-main__services li {
+  margin-left: 41px;
 }
 
 .footer-main__ico-user,
 .footer-main__ico-compare,
 .footer-main__ico-cart {
   fill: #ffc600;
+}
+
+.footer-main__contacts a,
+.footer-main__contacts span,
+.footer-main__services a {
+  margin-left: 6px;
+  font-size: 15px;
+  line-height: 36px;
+  font-family: "Open Sans", Arial, sans-serif;
+  font-weight: 300;
+  letter-spacing: 0.01em;
+  color: #fff;
+}
+
+.footer-main__contacts a,
+.footer-main__contacts span {
+  letter-spacing: 0;
+  margin-left: 0;
+}
+
+.footer-main__contacts span {
+  margin-right: 160px;
+}
+
+.footer-main__contacts a {
+  margin-left: auto;
+}
+
+.footer-main__contacts {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 57px;
+}
+
+.footer-nav {
+  display: flex;
+  flex-wrap: wrap;
+  width: 434px;
+  justify-content: space-between;
+  padding-top: 11px;
+}
+
+.footer-nav a {
+  display: block;
+  margin: 0;
+  padding: 0px 3px;
+  font-size: 18px;
+  line-height: 1.2em;
+  font-family: "Gilroy", Arial, sans-serif;
+  font-weight: 800;
+  letter-spacing: 0.2em;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.footer-main__social {
+  margin-left: 505px;
+  width: 655px;
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 50px;
+}
+
+.footer-social {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 147px;
+}
+
+.footer-social__link {
+  display: block;
+  width: 40px;
+  height: 40px;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0.6;
+}
+
+.footer-social__link--fb {
+  background-image: url("../img/fb.svg");
+}
+
+.footer-social__link--insta {
+  background-image: url("../img/insta.svg");
+}
+
+.footer-social__link--tw {
+  background-image: url("../img/tw.svg");
+}
+
+.footer-social__link:hover {
+  opacity: 1;
+}
+
+.footer-social__link:active {
+  opacity: 0.3;
+}
+
+.footer-main__academy-link {
+  display: block;
+  width: 30px;
+  height: 40px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url("../img/logo-html.svg");
+}
+
+.footer-main__logo:hover,
+.footer-main__services li:hover,
+.footer-nav a:hover,
+.footer-main__academy-link:hover {
+  opacity: 0.6;
+}
+
+.footer-main__logo:active,
+.footer-main__services li:active,
+.footer-nav a:active,
+.footer-main__academy-link:active {
+  opacity: 0.3;
 }
