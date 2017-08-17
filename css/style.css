@@ -236,7 +236,7 @@ body {
 }
 
 .header-services__item--out {
-  margin-left: 15px;
+  margin-left: -6px;
   margin-right: auto;
 }
 
@@ -956,7 +956,85 @@ a.header-menu__item--active:active {
   width: 560px;
   height: 222px;
   margin-bottom: 69px;
-  background-color: #CCC;
+  background-color: #ccc;
+}
+
+/* ********************************************************** */
+/* *********            catalog.html             ************ */
+/* ********************************************************** */
+/* ********************************************************** */
+/* *********         Заголовок каталога          ************ */
+/* ********************************************************** */
+
+.header-main__catalog {
+  padding-bottom: 46px;
+  margin-bottom: 37px;
+}
+
+.main-general {
+  width: 1040px;
+  margin: 0 auto;
+  margin-bottom: 49px;
+}
+
+.main-general__header h1{
+  margin: 0;
+  margin-bottom: 28px;
+  font-family: "Gilroy", Arial, sans-serif;
+  font-weight: 800;
+  font-size: 47px;
+  line-height: 49px;
+  letter-spacing: 0.02em;
+}
+
+.crumbs {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  font-family: "Open Sans", Arial, sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.01em;
+}
+
+.crumbs__item {
+  position: relative;
+  display: block;
+  padding-right: 38px;
+  color: #000;
+  text-decoration: none;
+  opacity: 0.3;
+}
+
+.crumbs li {
+  position: relative;
+}
+
+.crumbs li::after {
+  content: ">";
+  color: #000;
+  position: absolute;
+  top: 0;
+  right: 14px;
+}
+
+.crumbs li:last-child::after {
+  content: "";
+}
+
+.crumbs__item:hover {
+  opacity: 0.6;
+}
+
+.crumbs__item:active {
+  opacity: 0.1;
+}
+
+.crumbs__item--last:hover,
+.crumbs__item--last:active {
+ opacity: 0.3;
 }
 
 /* ********************************************************** */
