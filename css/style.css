@@ -160,7 +160,7 @@ body {
   height: 16px;
   top: 26px;
   left: 7px;
-  background-image: url("../img/search.svg");
+  background-image: url("../img/svg/search.svg");
 }
 
 .header-info__form input[type=search] {
@@ -181,7 +181,7 @@ body {
   border-bottom: 2px solid #000;
 }
 
-.header-info__form input[type="submit"] {
+.header-info__form-button {
   display: none;
   width: 85px;
   padding: 13px 0;
@@ -191,13 +191,13 @@ body {
   border: 2px solid #000;
 }
 
-.header-info__form input[type="submit"]:hover {
+.header-info__form-button:hover {
   display: block;
   color: #fff;
   background-color: #000;
 }
 
-.header-info__form input[type="submit"]:active {
+.header-info__form-button:active {
   display: block;
   color: #fff;
   opacity: 0.3;
@@ -205,8 +205,8 @@ body {
   outline: none;
 }
 
-.header-info__form input[type="search"]:focus ~ input[type="submit"],
-.header-info__form input[type="search"]:focus ~ input[type="submit"]:focus {
+.header-info__form input[type="search"]:focus ~ .header-info__form-button,
+.header-info__form input[type="search"]:focus ~ .header-info__form-button:focus {
   display: block;
 }
 
@@ -610,23 +610,23 @@ a.header-menu__item--active:active {
 }
 
 .shop__item--real::after {
-  background-image: url(../img/popular-1.svg);
+  background-image: url(../img/svg/popular-1.svg);
 }
 .shop__item--mono::after {
-  background-image: url(../img/popular-2.svg);
+  background-image: url(../img/svg/popular-2.svg);
   background-position: bottom;
 }
 .shop__item--cam::after {
-  background-image: url(../img/popular-3.svg);
+  background-image: url(../img/svg/popular-3.svg);
 }
 .shop__item--jav::after {
-  background-image: url(../img/popular-4.svg);
+  background-image: url(../img/svg/popular-4.svg);
 }
 .shop__item--watch::after {
-  background-image: url(../img/popular-5.svg);
+  background-image: url(../img/svg/popular-5.svg);
 }
 .shop__item--quadro::after {
-  background-image: url(../img/popular-6.svg);
+  background-image: url(../img/svg/popular-6.svg);
 }
 
 .shop__item:hover::before,
@@ -780,7 +780,7 @@ a.header-menu__item--active:active {
   left: 556px;
   width: 136px;
   height: 164px;
-  background: url(../img/delivery.svg) no-repeat;
+  background: url(../img/svg/delivery.svg) no-repeat;
 }
 
 .support__item:nth-child(2)::after {
@@ -788,7 +788,7 @@ a.header-menu__item--active:active {
   left: 541px;
   width: 171px;
   height: 195px;
-  background: url(../img/warranty.svg) no-repeat;
+  background: url(../img/svg/warranty.svg) no-repeat;
 }
 
 .support__item:nth-child(3)::after {
@@ -796,7 +796,7 @@ a.header-menu__item--active:active {
   left: 532px;
   width: 156px;
   height: 188px;
-  background: url(../img/credit.svg) no-repeat;
+  background: url(../img/svg/credit.svg) no-repeat;
 }
 
 /* ********************************************************** */
@@ -1109,15 +1109,15 @@ a.header-menu__item--active:active {
 }
 
 .footer-social__link--fb {
-  background-image: url("../img/fb.svg");
+  background-image: url("../img/svg/fb.svg");
 }
 
 .footer-social__link--insta {
-  background-image: url("../img/insta.svg");
+  background-image: url("../img/svg/insta.svg");
 }
 
 .footer-social__link--tw {
-  background-image: url("../img/tw.svg");
+  background-image: url("../img/svg/tw.svg");
 }
 
 .footer-social__link:hover {
@@ -1134,7 +1134,7 @@ a.header-menu__item--active:active {
   height: 40px;
   background-position: center;
   background-repeat: no-repeat;
-  background-image: url("../img/logo-html.svg");
+  background-image: url("../img/svg/logo-html.svg");
 }
 
 .footer-main__logo:hover,
@@ -1156,6 +1156,22 @@ a.header-menu__item--active:active {
 /* ********************************************************** */
 .modal-map {
   display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 960px;
+  background-color: #fff;
+  border: none;
+  min-height: 560px;
+  margin-left: -480px;
+  margin-top: -277px;
+  z-index: 100;
+  animation-name: modal__up;
+  animation-duration: 0.4s;
+}
+
+.modal-map--show {
+  display: block;
 }
 
 .modal-feedback {
@@ -1170,6 +1186,8 @@ a.header-menu__item--active:active {
   margin-left: -480px;
   margin-top: -277px;
   z-index: 100;
+  animation-name: modal__up;
+  animation-duration: 0.4s;
 }
 
 .modal-feedback--show {
@@ -1308,4 +1326,19 @@ a.header-menu__item--active:active {
 /* ********************************************************** */
 .modal-form__invalid {
   background-color: #f6dada;
+}
+
+@keyframes modal__up {
+  0%   {
+    -webkit-transform: translateY(100px);
+    transform: translateY(100px);
+  }
+  50%  {
+    -webkit-transform: translateY(-100px);
+    transform: translateY(-100px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
 }
