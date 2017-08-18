@@ -95,50 +95,52 @@
         <li><a class="crumbs__item crumbs__item--last">Моноподы для селфи</a></li>
       </ul>
     </section>
-    <section class="main-general__body">
+    <section class="catalog-page">
       <aside class="filter">
         <h2 class="filter__title">Фильтр:</h2>
         <form class="filter__form" action="https://echo.htmlacademy.ru" method="get">
-          <div class="filter-set filer-range">
+          <fieldset class="filer-range">
             <h3 class="filter-set__title">Стоимость</h3>
             <div class="filer-range__control">
-              <div class="filer-range__scale">
-                <div class="filer-range__bar"></div>
-              </div>
+              <div class="filer-range__scale"><div class="filer-range__bar"></div></div>
               <div class="filer-range__toggle filer-range__toggle--min"></div>
               <div class="filer-range__toggle filer-range__toggle--max"></div>
             </div>
             <div class="filer-range__value">
-              <label class="filer-range__min-price">от <input type="text" name="min-price" value="0"></label>
-              <label class="filer-range__max-price">до <input type="text" name="max-price" value="5000"></label>
+              <label class="filer-range__label">
+                от <input type="text" name="min-price" value="0">
+              </label>
+              <label class="filer-range__label">
+                до <input type="text" name="max-price" value="5000">
+              </label>
             </div>
-          </div>
-          <div class="filter-set filter-color">
+          </fieldset>
+          <fieldset class="filter-color">
             <h3 class="filter-set__title">Цвет</h3>
             <ul>
-              <li>
+              <li class="filter-color__item">
                 <input class="visually-hidden" type="checkbox" id="color-black" name="color-black" checked>
                 <label for="color-black">Черный</label>
               </li>
-              <li>
+              <li class="filter-color__item">
                 <input class="visually-hidden" type="checkbox" id="color-white" name="color-white">
                 <label for="color-white">Белый</label>
               </li>
-              <li>
+              <li class="filter-color__item">
                 <input class="visually-hidden" type="checkbox" id="color-blue" name="color-blue" checked>
                 <label for="color-blue">Синий</label>
-              </li>
-              <li>
+              </li class="filter-color__item">
+              <li class="filter-color__item">
                 <input class="visually-hidden" type="checkbox" id="color-red" name="color-red" checked>
                 <label for="color-red">Красный</label>
-              </li>
-              <li>
+              </li class="filter-color__item">
+              <li class="filter-color__item">
                 <input class="visually-hidden" type="checkbox" id="color-pink" name="color-pink">
                 <label for="color-pink">Розовый</label>
               </li>
             </ul>
-          </div>
-          <div class="filter-set filter-bluetooth">
+          </fieldset>
+          <fieldset class="filter-bluetooth">
             <h3 class="filter-set__title">Bluetooth</h3>
             <ul>
               <li>
@@ -150,7 +152,7 @@
                 <label for="filter-bluetooth-no">Нет</label>
               </li>
             </ul>
-          </div>
+          </fieldset>
           <button class="btn" type="submit">Показать</button>
         </form>
       </aside>
@@ -228,7 +230,7 @@
   <footer class="footer-main">
     <div class="footer-main__wrap">
       <div class="footer-main__info">
-      <a href="index.html" class="footer-main__logo">Device</a>
+        <a href="index.html" class="footer-main__logo">Device</a>
         <ul class="footer-main__services">
           <li>
             <svg width="12" height="12" class="footer-main__ico-user">
