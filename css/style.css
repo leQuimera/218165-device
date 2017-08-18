@@ -610,23 +610,23 @@ a.header-menu__item--active:active {
 }
 
 .shop__item--real::after {
-  background-image: url(../img/svg/popular-1.svg);
+  background-image: url(../img/Shop_items/popular-1.svg);
 }
 .shop__item--mono::after {
-  background-image: url(../img/svg/popular-2.svg);
+  background-image: url(../img/Shop_items/popular-2.svg);
   background-position: bottom;
 }
 .shop__item--cam::after {
-  background-image: url(../img/svg/popular-3.svg);
+  background-image: url(../img/Shop_items/popular-3.svg);
 }
 .shop__item--jav::after {
-  background-image: url(../img/svg/popular-4.svg);
+  background-image: url(../img/Shop_items/popular-4.svg);
 }
 .shop__item--watch::after {
-  background-image: url(../img/svg/popular-5.svg);
+  background-image: url(../img/Shop_items/popular-5.svg);
 }
 .shop__item--quadro::after {
-  background-image: url(../img/svg/popular-6.svg);
+  background-image: url(../img/Shop_items/popular-6.svg);
 }
 
 .shop__item:hover::before,
@@ -826,38 +826,42 @@ a.header-menu__item--active:active {
   width: 260px;
   height: 100px;
   background-position: center;
+  filter: grayscale(100%);
+  -webkit-filter: grayscale(100%);
+  -moz-filter: grayscale(100%);
+  -ms-filter: grayscale(100%);
+  -o-filter: grayscale(100%);
+  filter: url("../img/svg/grayscale.svg#greyscale");
+  filter: gray;
+  -webkit-filter: grayscale(1);
+  opacity: 0.2;
 }
 
 .partners a:nth-child(1)::before {
-  background-image: url("../img/dji_main.png");
-}
-
-.partners a:nth-child(1):hover::before {
- background-image: url("../img/dji.jpg");
+  background-image: url("../img/dji.jpg");
 }
 
 .partners a:nth-child(2)::before {
-  background-image: url("../img/sp_main.png");
-}
-
-.partners a:nth-child(2):hover::before {
- background-image: url("../img/sp.jpg");
+  background-image: url("../img/sp.jpg");
 }
 
 .partners a:nth-child(3)::before {
-  background-image: url("../img/gopro_main.png");
-}
-
-.partners a:nth-child(3):hover::before {
- background-image: url("../img/gopro.jpg");
+  background-image: url("../img/gopro.jpg");
 }
 
 .partners a:nth-child(4)::before {
-  background-image: url("../img/vive_main.png");
+  background-image: url("../img/vive.jpg");
 }
 
-.partners a:nth-child(4):hover::before {
- background-image: url("../img/vive.jpg");
+.partners a:hover::before {
+  filter: grayscale(0%);
+  -webkit-filter: grayscale(0%);
+  -moz-filter: grayscale(0%);
+  -ms-filter: grayscale(0%);
+  -o-filter: grayscale(0%);
+  filter: none;
+  -webkit-filter: grayscale(0);
+  opacity: 1;
 }
 
 /* ********************************************************** */
@@ -1208,7 +1212,7 @@ a.header-menu__item--active:active {
 
 .footer-main__academy-link {
   display: block;
-  width: 30px;
+  width: 31px;
   height: 40px;
   background-position: center;
   background-repeat: no-repeat;
