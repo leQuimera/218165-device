@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-	<meta charset="utf-8">
-	<title>HTML Academy: Девайс</title>
-	<link href="css/normalize.css" rel="stylesheet">
-	<link href="css/style.css" rel="stylesheet">
+  <meta charset="utf-8">
+  <title>HTML Academy: Девайс</title>
+  <link href="css/normalize.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
@@ -86,91 +86,95 @@
       <a href="#" class="header-nav__item header-nav__item--contacts">Контакты</a>
     </nav>
   </header>
-  <main class="main-general">
-    <section class="main-general__header">
-      <h1>Моноподы для селфи</h1>
-      <ul class="crumbs">
-        <li><a href="index.html" class="crumbs__item">Главная</a></li>
-        <li><a href="#" class="crumbs__item">Каталог товаров</a></li>
-        <li><a class="crumbs__item crumbs__item--last">Моноподы для селфи</a></li>
-      </ul>
-    </section>
-    <section class="catalog-page">
-      <aside class="filter">
+  <section class="catalog-header">
+    <h1>Моноподы для селфи</h1>
+    <ul class="crumbs">
+      <li><a href="index.html" class="crumbs__item">Главная</a></li>
+      <li><a href="#" class="crumbs__item">Каталог товаров</a></li>
+      <li><a class="crumbs__item crumbs__item--last">Моноподы для селфи</a></li>
+    </ul>
+  </section>
+  <section class="catalog-page">
+    <header class="catalog-page__wrapper">
+      <div class="filter">
         <h2 class="filter__title">Фильтр:</h2>
-        <form class="filter__form" action="https://echo.htmlacademy.ru" method="get">
-          <fieldset class="filer-range">
-            <h3 class="filter-set__title">Стоимость</h3>
-            <div class="filer-range__control">
-              <div class="filer-range__scale"><div class="filer-range__bar"></div></div>
-              <div class="filer-range__toggle filer-range__toggle--min"></div>
-              <div class="filer-range__toggle filer-range__toggle--max"></div>
-            </div>
-            <div class="filer-range__value">
-              <label class="filer-range__label">
-                от <input type="text" name="min-price" value="0">
-              </label>
-              <label class="filer-range__label">
-                до <input type="text" name="max-price" value="5000">
-              </label>
-            </div>
-          </fieldset>
-          <fieldset class="filter-color">
-            <h3 class="filter-set__title">Цвет</h3>
-            <ul>
-              <li class="filter-color__item">
-                <input class="visually-hidden" type="checkbox" id="color-black" name="color-black" checked>
-                <label for="color-black">Черный</label>
-              </li>
-              <li class="filter-color__item">
-                <input class="visually-hidden" type="checkbox" id="color-white" name="color-white">
-                <label for="color-white">Белый</label>
-              </li>
-              <li class="filter-color__item">
-                <input class="visually-hidden" type="checkbox" id="color-blue" name="color-blue" checked>
-                <label for="color-blue">Синий</label>
-              </li class="filter-color__item">
-              <li class="filter-color__item">
-                <input class="visually-hidden" type="checkbox" id="color-red" name="color-red" checked>
-                <label for="color-red">Красный</label>
-              </li class="filter-color__item">
-              <li class="filter-color__item">
-                <input class="visually-hidden" type="checkbox" id="color-pink" name="color-pink">
-                <label for="color-pink">Розовый</label>
-              </li>
-            </ul>
-          </fieldset>
-          <fieldset class="filter-bluetooth">
-            <h3 class="filter-set__title">Bluetooth</h3>
-            <ul>
-              <li>
-                <input class="visually-hidden" type="radio" id="filter-bluetooth-yes" name="filter-bluetooth-toggle" value="yes" checked>
-                <label for="filter-bluetooth-yes">Есть</label>
-              </li>
-              <li>
-                <input class="visually-hidden" type="radio" id="filter-bluetooth-no" name="filter-bluetooth-toggle" value="no">
-                <label for="filter-bluetooth-no">Нет</label>
-              </li>
-            </ul>
-          </fieldset>
-          <button class="btn" type="submit">Показать</button>
-        </form>
-      </aside>
-      <section class="catalog">
-        <div class="sorting">
-          <div class="sorting__bar">
-            <h3 class="sorting__tytle">Сортировка:</h3>
-            <a href="#" class="sorting__type sorting__type--active">По цене</a>
-            <a href="#" class="sorting__type">По типу</a>
-            <a href="#" class="sorting__type">По популярности</a>
-          </div>
-          <div class="sorting__arrows">
-            <a href="#" class="sorting__arrow sorting__arrow--up"><span class="visually-hidden">Больше</span></a>
-            <a href="#" class="sorting__arrow sorting__arrow--down"><span class="visually-hidden">Меньше</span></a>
-          </div>
+      </div>
+      <div class="sorting">
+        <h3 class="sorting__tytle">Сортировка:</h3>
+        <ul class="sorting__bar">
+          <li><a href="#" class="sorting__type sorting__type--active">По цене</a></li>
+          <li><a href="#" class="sorting__type">По типу</a></li>
+          <li><a href="#" class="sorting__type">По популярности</a></li>
+        </ul>
+        <div class="sorting__arrows">
+          <a href="#" class="sorting__arrow sorting__arrow--up"><span class="visually-hidden">Больше</span></a>
+          <a href="#" class="sorting__arrow sorting__arrow--down sorting__arrow--active"><span class="visually-hidden">Меньше</span></a>
         </div>
-        <div class="catalog__wrapper">
-          <div class="catalog__list">
+      </div>
+    </header>
+    <section class="catalog-body">
+      <div class="catalog-page__wrapper">
+        <aside class="catalog-body__filter">
+          <form class="filter__form" action="https://echo.htmlacademy.ru" method="get">
+            <fieldset class="filter-set">
+              <h3 class="filter-set__title">Стоимость</h3>
+              <div class="filer-range__control">
+                <div class="filer-range__scale"><div class="filer-range__bar"></div></div>
+                <div class="filer-range__toggle filer-range__toggle--min"></div>
+                <div class="filer-range__toggle filer-range__toggle--max"></div>
+              </div>
+              <div class="filer-range__value">
+                <label class="filer-range__label">
+                  от <input type="text" name="min-price" value="0">
+                </label>
+                <label class="filer-range__label">
+                  до <input type="text" name="max-price" value="5000">
+                </label>
+              </div>
+            </fieldset>
+            <fieldset class="filter-set">
+              <h3 class="filter-set__title">Цвет</h3>
+              <ul>
+                <li class="filter-set__item">
+                  <input class="filter-color__check" type="checkbox" id="color-black" name="color-black" tabindex="-1" checked="checked">
+                  <label for="color-black" tabindex="0">Черный</label>
+                </li>
+                <li class="filter-set__item">
+                  <input class="filter-color__check" type="checkbox" id="color-white" name="color-white" tabindex="-1">
+                  <label for="color-white" tabindex="0">Белый</label>
+                </li>
+                <li class="filter-set__item">
+                  <input class="filter-color__check" type="checkbox" id="color-blue" name="color-blue" tabindex="-1" checked="checked">
+                  <label for="color-blue" tabindex="0">Синий</label>
+                </li>
+                <li class="filter-set__item">
+                  <input class="filter-color__check" type="checkbox" id="color-red" name="color-red" tabindex="-1" checked="checked">
+                  <label for="color-red" tabindex="0">Красный</label>
+                </li>
+                <li class="filter-set__item">
+                  <input class="filter-color__check" type="checkbox" id="color-pink" name="color-pink" tabindex="-1">
+                  <label for="color-pink" tabindex="0">Розовый</label>
+                </li>
+              </ul>
+            </fieldset>
+            <fieldset class="filter-set">
+              <h3 class="filter-set__title">Bluetooth</h3>
+              <ul>
+                <li class="filter-set__item">
+                  <input class="filter-bluetooth__radio" type="radio" id="filter-bluetooth-yes" name="filter-bluetooth-toggle" value="yes" tabindex="-1" checked="checked">
+                  <label for="filter-bluetooth-yes" tabindex="0">Есть</label>
+                </li>
+                <li class="filter-set__item">
+                  <input class="filter-bluetooth__radio" type="radio" id="filter-bluetooth-no" name="filter-bluetooth-toggle" value="no" tabindex="-1">
+                  <label for="filter-bluetooth-no" tabindex="0">Нет</label>
+                </li>
+              </ul>
+            </fieldset>
+            <button class="btn" type="submit">Показать</button>
+          </form>
+        </aside>
+        <section class="catalog__list">
+          <div class="catalog__wrapper">
             <article class="catalog-item">
               <img src="img/item_01.jpg" width="360" height="380" alt="Любительская селфи-палка">
               <div class="catalog-item__hover">
@@ -189,7 +193,7 @@
                 <a href="#" class="catalog-item__compare">Добавить к сравнению</a>
               </div>
               <div class="catalog-item__info">
-                <a href="#" class="catalog-item__title">Профессиональная селфи-палка</a>
+                <a href="#" class="catalog-item__title">Профессиональная<br> селфи-палка</a>
                 <span class="catalog-item__price">1500 руб.</span>
               </div>
             </article>
@@ -217,16 +221,16 @@
             </article>
           </div>
           <ul class="paginator">
-            <li><a class="paginator__prev">Назад</a></li>
-            <li><a class="paginator__active">1</a></li>
-            <li><a href="#">2</a></li>
-            <li><a href="#">3</a></li>
-            <li><a href="#" class="paginator__next">Вперед</a></li>
+            <li><a class="paginator__link paginator__link--prev">Назад</a></li>
+            <li><a class="paginator__link paginator__link--active">1</a></li>
+            <li><a href="#" class="paginator__link">2</a></li>
+            <li><a href="#" class="paginator__link">3</a></li>
+            <li><a href="#" class="paginator__link paginator__link--next">Вперед</a></li>
           </ul>
-        </div>
-      </section>
+        </section>
+      </div>
     </section>
-  </main>
+  </section>
   <footer class="footer-main">
     <div class="footer-main__wrap">
       <div class="footer-main__info">
