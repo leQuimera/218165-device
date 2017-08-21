@@ -30,10 +30,14 @@
 /* ********************************************************** */
 /* *********             Общие стили             ************ */
 /* ********************************************************** */
+html,
 body {
-  min-width: 1200px;
   padding: 0;
   margin: 0;
+}
+
+body {
+  min-width: 1200px;
   font-family: "Open Sans", Arial, sans-serif;
   font-weight: 300;
   font-size: 15px;
@@ -838,19 +842,19 @@ a.header-menu__item--active:active {
   opacity: 0.2;
 }
 
-.partners a:nth-child(1)::before {
+.partners a:nth-of-type(1)::before {
   background-image: url("../img/dji.jpg");
 }
 
-.partners a:nth-child(2)::before {
+.partners a:nth-of-type(2)::before {
   background-image: url("../img/sp.jpg");
 }
 
-.partners a:nth-child(3)::before {
+.partners a:nth-of-type(3)::before {
   background-image: url("../img/gopro.jpg");
 }
 
-.partners a:nth-child(4)::before {
+.partners a:nth-of-type(4)::before {
   background-image: url("../img/vive.jpg");
 }
 
