@@ -1447,6 +1447,7 @@ a.header-menu__item--active:active {
 }
 
 .catalog-item {
+  position: relative;
   margin-bottom: 52px;
 }
 
@@ -1512,6 +1513,47 @@ a.header-menu__item--active:active {
 
 .catalog-item__hover {
   display: none;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 360px;
+  height: 380px;
+  background-color: rgba(238, 238, 238, 0.7);
+  cursor: pointer;
+  z-index: 1;
+}
+
+.catalog-item img:hover ~ .catalog-item__hover,
+.catalog-item img:active ~ .catalog-item__hover,
+.catalog-item img:focus ~ .catalog-item__hover,
+.catalog-item__hover:hover {
+  display: flex;
+}
+
+.catalog-item__hover .btn {
+  width: 200px;
+  margin-top: 170px;
+  margin-bottom: 15px;
+}
+
+.catalog-item__hover .catalog-item__compare {
+  font-family: "Open Sans", Arial, sans-serif;
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 20px;
+  letter-spacing: 0.01em;
+  color: rgba(0, 0, 0, 0.5);
+  text-decoration: none;
+}
+
+.catalog-item__hover .catalog-item__compare:hover {
+  color: rgba(0, 0, 0, 1);
+}
+
+.catalog-item__hover .catalog-item__compare:active {
+  color: rgba(0, 0, 0, 0.2);
 }
 
 .paginator {
@@ -1545,9 +1587,29 @@ a.header-menu__item--active:active {
   color: rgba(0, 0, 0, 1);
 }
 
+.paginator__link--prev:hover,
+.paginator__link--next:hover {
+  background-color: rgba(0, 0, 0, 0.08);
+  color: rgba(0, 0, 0, 1);
+}
+
+.paginator__link--prev:active,
+.paginator__link--next:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
 .paginator__link--active {
   color: rgba(0, 0, 0, 1);
   cursor: auto;
+}
+
+.paginator__link:hover,
+.paginator__link:focus {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.paginator__link:active {
+  color: rgba(0, 0, 0, 1);
 }
 
 .paginator li:first-child {
