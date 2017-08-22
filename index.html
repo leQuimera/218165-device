@@ -44,12 +44,10 @@
       <h1 class="visually-hidden">Магазин Device</h1>
     </a>
     <div class="header-info">
-      <form action="https://echo.htmlacademy.ru" method="get">
-        <div class="header-info__form">
-          <label for="search-field" class="visually-hidden">Поиск по сийту</label>
-          <input type="search" name="search-field" id="search-field" placeholder="Поиск по сайту">
-          <button type="submit" class="header-info__form-button">Найти</button>
-        </div>
+      <form action="https://echo.htmlacademy.ru" method="get" class="header-info__form">
+        <label for="search-field" class="visually-hidden">Поиск по сийту</label>
+        <input type="search" name="search-field" id="search-field" placeholder="Поиск по сайту">
+        <button type="submit" class="header-info__form-button" tabindex="-1">Найти</button>
       </form>
       <ul class="header-services">
         <li class="header-services__item">
@@ -73,7 +71,7 @@
       </ul>
     </div>
     <nav class="header-nav">
-      <a href="#" class="header-nav__item header-nav__item--catalog">Каталог товаров</a>
+      <a href="catalog.html" class="header-nav__item header-nav__item--catalog">Каталог товаров</a>
       <ul class="header-menu">
         <li class="header-menu__item">
           <a href="catalog.html">Виртуальная реальность</a>
@@ -98,11 +96,6 @@
     <input class="slider__btn-1 visually-hidden" type="radio" name="slider-toggle" id="slide-1" checked="checked">
     <input class="slider__btn-2 visually-hidden" type="radio" name="slider-toggle" id="slide-2">
     <input class="slider__btn-3 visually-hidden" type="radio" name="slider-toggle" id="slide-3">
-    <div class="slider__control">
-      <label for="slide-1"></label>
-      <label for="slide-2"></label>
-      <label for="slide-3"></label>
-    </div>
     <ol class="slider__content">
       <li class="slider__item">
         <div class="slider__img">
@@ -165,6 +158,11 @@
         </div>
       </li>
     </ol>
+    <div class="slider__control">
+      <label for="slide-1"><span class="visually-hidden">Самая длинная селфи-палка</span></label>
+      <label for="slide-2"><span class="visually-hidden">Фитнесс-браслет</span></label>
+      <label for="slide-3"><span class="visually-hidden">Квадрокоптер с лазером</span></label>
+    </div>
   </section>
   <section class="shop">
     <h2 class="visually-hidden">Разделы каталога</h2>
@@ -189,16 +187,16 @@
         <label for="support-3">Кредит</label>
       </div>
       <ul class="support__text">
-        <li class="support__item">
-          <h2>Доставка</h2>
+        <li class="support__item support__item--1">
+          <h3>Доставка</h3>
           <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
         </li>
         <li class="support__item support__item--2">
-          <h2>Гарантия</h2>
+          <h3>Гарантия</h3>
           <p>Если из-за возгарания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый. Товар, не дом, конечно же.</p>
         </li>
         <li class="support__item support__item--3">
-          <h2>Кредит</h2>
+          <h3>Кредит</h3>
           <p>Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для нашего банка, разумеется.</p>
         </li>
       </ul>
@@ -235,7 +233,12 @@
   <footer class="footer-main">
     <div class="footer-main__wrap">
       <div class="footer-main__info">
-        <a class="footer-main__logo">Device</a>
+        <a class="footer-main__logo">
+          <svg width="162" height="35" class="footer-main__svg">
+            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#logo"></use>
+          </svg>
+          <span class="visually-hidden">Магазин Device</span>
+        </a>
         <ul class="footer-main__services">
           <li>
             <svg width="12" height="12" class="footer-main__ico-user">
