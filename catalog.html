@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <title>HTML Academy: Девайс</title>
   <link href="css/normalize.css" rel="stylesheet">
-  <link href="css/style.css" rel="stylesheet">
+  <link href="css/style.min.css" rel="stylesheet">
 </head>
 
 <body>
@@ -35,10 +35,10 @@
   <header class="header-main header-main__catalog">
     <a href="index.html" class="header-main__logo">Device</a>
     <div class="header-info">
-      <label for="search-field" class="visually-hidden">Поиск по сийту</label>
       <form action="https://echo.htmlacademy.ru" method="get">
         <div class="header-info__form">
-          <input type="search" name="search-field" placeholder="Поиск по сайту">
+          <label for="search-field" class="visually-hidden">Поиск по сийту</label>
+          <input type="search" name="search-field" placeholder="Поиск по сайту" id="search-field">
           <button type="submit" class="header-info__form-button">Найти</button>
         </div>
       </form>
@@ -113,7 +113,7 @@
         </div>
       </div>
     </header>
-    <section class="catalog-body">
+    <div class="catalog-body">
       <div class="catalog-page__wrapper">
         <aside class="catalog-body__filter">
           <form class="filter__form" action="https://echo.htmlacademy.ru" method="get">
@@ -175,6 +175,7 @@
           </form>
         </aside>
         <section class="catalog__list">
+          <h2 class="visually-hidden">Список товаров</h2>
           <div class="catalog__wrapper">
             <article class="catalog-item">
               <img src="img/item_01.jpg" width="360" height="380" alt="Любительская селфи-палка">
@@ -230,7 +231,7 @@
           </ul>
         </section>
       </div>
-    </section>
+    </div>
   </section>
   <footer class="footer-main footer-main--catalog">
     <div class="footer-main__wrap">
@@ -241,19 +242,19 @@
             <svg width="12" height="12" class="footer-main__ico-user">
               <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#user"></use>
             </svg>
-            <a href="#" class="footer-main__item footer-main__item--user">Выйти</a>
+            <a href="#">Выйти</a>
           </li>
           <li>
             <svg width="12" height="12" class="footer-main__ico-compare">
               <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#compare"></use>
             </svg>
-            <a href="#" class="footer-main__item footer-main__item--compare">Сравнить</a>
+            <a href="#">Сравнить</a>
           </li>
           <li>
             <svg width="12" height="12" class="footer-main__ico-cart">
               <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#cart"></use>
             </svg>
-            <a href="#" class="footer-main__item footer-main__item--bask">Корзина</a>
+            <a href="#">Корзина</a>
           </li>
         </ul>
       </div>
@@ -282,6 +283,5 @@
       </div>
     </div>
   </footer>
-
 </body>
 </html>
