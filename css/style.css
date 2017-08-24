@@ -284,6 +284,7 @@ body {
 }
 
 .header-services__link--out {
+  opacity: 0.3;
   padding-left: 2px;
 }
 
