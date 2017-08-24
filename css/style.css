@@ -491,7 +491,15 @@ a.header-menu__item--active:active {
 }
 
 .slider__item {
-  display: none;
+  position:absolute;
+  z-index: 0;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  padding-top: 2px;
+  overflow:hidden;
+  opacity: 0;
 }
 
 .slider__btn-1:checked ~ .slider__control label[for="slide-1"]::after,
@@ -511,13 +519,14 @@ a.header-menu__item--active:active {
 .slider__btn-2:checked ~ .slider__content .slider__item:nth-child(2),
 .slider__btn-3:checked ~ .slider__content .slider__item:nth-child(3) {
   position: relative;
+  z-index: 1;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding-top: 2px;
+  opacity: 1;
 }
 
 .slider__item::before {
@@ -697,27 +706,30 @@ a.header-menu__item--active:active {
 .shop__item--real::after {
   background-image: url("../img/Shop_items/real.svg");
 }
+
 .shop__item--mono::after {
   background-image: url("../img/Shop_items/mono.svg");
   background-position: bottom;
 }
+
 .shop__item--cam::after {
   background-image: url("../img/Shop_items/cam.svg");
-  background-position-x: 49px;
-  background-position-y: 39px;
+  background-position: 49px 39px;
 }
+
 .shop__item--jav::after {
   background-image: url("../img/Shop_items/jav.svg");
-  background-position-y: 50px;
+  background-position: 50% 50px;
 }
+
 .shop__item--watch::after {
   background-image: url("../img/Shop_items/watch.svg");
-  background-position-x: 54px;
-  background-position-y: 33px;
+  background-position: 54px 33px;
 }
+
 .shop__item--quadro::after {
   background-image: url("../img/Shop_items/quadro.svg");
-  background-position-y: 50px;
+  background-position: 50% 50px;
 }
 
 .shop__item:active {
@@ -745,6 +757,7 @@ a.header-menu__item--active:active {
 }
 
 .support__container {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -843,13 +856,22 @@ a.header-menu__item--active:active {
 }
 
 .support__item {
-  display: none;
+  position: absolute;
+  z-index: 0;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding-top: 2px;
+  opacity: 0;
 }
 
 .support__btn-1:checked ~ .support__text .support__item:nth-child(1),
 .support__btn-2:checked ~ .support__text .support__item:nth-child(2),
 .support__btn-3:checked ~ .support__text .support__item:nth-child(3) {
-  display: block;
+  position: relative;
+  z-index: 1;
+  opacity: 1;
 }
 
 .support__item h3 {
@@ -929,50 +951,30 @@ a.header-menu__item--active:active {
   text-decoration: none;
 }
 
-.partners a::before {
-  content: "";
-  position: absolute;
-  width: 260px;
-  height: 100px;
-  background-position: center;
-  -webkit-filter: grayscale(100%);
-     -moz-filter: grayscale(100%);
-      -ms-filter: grayscale(100%);
-       -o-filter: grayscale(100%);
-          filter: grayscale(100%);
-  -webkit-filter: url("../img/svg/grayscale.svg#greyscale");
-          filter: url("../img/svg/grayscale.svg#greyscale");
-  -webkit-filter: grayscale(1);
-  filter: gray;
-  opacity: 0.2;
+.partners a:nth-of-type(1) {
+    background:url("../img/dji.jpg");
 }
 
-.partners a:nth-of-type(1)::before {
-  background-image: url("../img/dji.jpg");
+.partners a:nth-of-type(2) {
+    background:url("../img/sp.jpg");
 }
 
-.partners a:nth-of-type(2)::before {
-  background-image: url("../img/sp.jpg");
+.partners a:nth-of-type(3) {
+    background:url("../img/gopro.jpg");
 }
 
-.partners a:nth-of-type(3)::before {
-  background-image: url("../img/gopro.jpg");
+.partners a:nth-of-type(4) {
+    background:url("../img/vive.jpg");
 }
 
-.partners a:nth-of-type(4)::before {
-  background-image: url("../img/vive.jpg");
+.partners__logo image {
+    -webkit-transition: all .6s ease;
+    -o-transition: all .6s ease;
+    transition: all .6s ease;
 }
 
-.partners a:hover::before,
-.partners a:focus::before {
-  filter: grayscale(0%);
-  filter: none;
-  -webkit-filter: grayscale(0%);
-     -moz-filter: grayscale(0%);
-      -ms-filter: grayscale(0%);
-       -o-filter: grayscale(0%);
-  -webkit-filter: grayscale(0);
-  opacity: 1;
+.partners__logo image:hover {
+    opacity: 0;
 }
 
 /* ********************************************************** */
@@ -987,7 +989,7 @@ a.header-menu__item--active:active {
           justify-content: space-between;
   width: 1160px;
   margin: 0 auto;
-  margin-bottom: 83px;
+  margin-bottom: 82px;
 }
 
 .info__about,
@@ -1040,7 +1042,7 @@ a.header-menu__item--active:active {
 .info__transport {
   position: relative;
   margin-bottom: 54px;
-  padding-top: 37px;
+  padding-top: 35px;
   padding-left: 1px;
   list-style-type: none;
   font-family: "Gilroy", Arial, sans-serif;
@@ -1560,8 +1562,8 @@ a.header-menu__item--active:active {
   content: "";
   position: absolute;
   display: block;
-  width: 17px;
-  height: 17px;
+  width: 18px;
+  height: 18px;
   top: -3px;
   left: -3px;
   border: 4px solid #000;

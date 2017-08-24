@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <title>HTML Academy: Девайс</title>
   <link href="css/normalize.css" rel="stylesheet">
-  <link href="css/style.css" rel="stylesheet">
+  <link href="css/style.min.css" rel="stylesheet">
 </head>
 
 <body>
@@ -195,10 +195,36 @@
   </section>
   <section class="partners">
     <h2 class="visually-hidden">Наши партнеры</h2>
-    <a href="http://www.dji.com/ru" target="_blank"><span class="visually-hidden">DJI</span></a>
-    <a href="http://www.sp-gadgets.com" target="_blank"><span class="visually-hidden">SPGADGETS</span></a>
-    <a href="https://ru.gopro.com" target="_blank"><span class="visually-hidden">GoPro</span></a>
-    <a href="https://www.vive.com/ru/" target="_blank"><span class="visually-hidden">VIVE</span></a>
+    <a href="http://www.dji.com/ru" target="_blank">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 100" width="260" height="100" class="partners__logo">
+        <defs>
+          <filter id="filtersPicture">
+            <feComposite result="inputTo_38" in="SourceGraphic" in2="SourceGraphic" operator="arithmetic" k1="0.3" k2="0.3" k3="0.3" k4="0.5" />
+            <feColorMatrix id="filter_38" type="saturate" values="0" data-filterid="38" />
+          </filter>
+        </defs>
+        <image filter="url(&quot;#filtersPicture&quot;)" x="0" y="0" width="260" height="100" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/dji.jpg" />
+      </svg>
+      <span class="visually-hidden">DJI</span>
+    </a>
+    <a href="http://www.sp-gadgets.com" target="_blank">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 100" width="260" height="100" class="partners__logo">
+        <image filter="url(#filtersPicture)" x="0" y="0" width="260" height="100" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sp.jpg" />
+      </svg>
+      <span class="visually-hidden">SPGADGETS</span>
+    </a>
+    <a href="https://ru.gopro.com" target="_blank">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 100" width="260" height="100" class="partners__logo">
+        <image filter="url(#filtersPicture)" x="0" y="0" width="260" height="100" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/gopro.jpg" />
+      </svg>
+      <span class="visually-hidden">GoPro</span>
+    </a>
+    <a href="https://www.vive.com/ru/" target="_blank">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 100" width="260" height="100" class="partners__logo">
+        <image filter="url(#filtersPicture)" x="0" y="0" width="260" height="100" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/vive.jpg" />
+      </svg>
+      <span class="visually-hidden">VIVE</span>
+    </a>
   </section>
   <div class="info">
     <section class="info__about">
