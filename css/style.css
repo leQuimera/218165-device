@@ -148,7 +148,7 @@ body {
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: flex-start;
-  padding: 0px 59px;
+  padding: 0px 57px;
   margin-bottom: 7px;
 }
 
@@ -164,7 +164,7 @@ body {
   content: "";
   position: absolute;
   top: 23px;
-  left: 6px;
+  left: 8px;
   width: 16px;
   height: 16px;
   background-image: url("../img/svg/search.svg");
@@ -296,14 +296,13 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  padding-right: 56px;
-  padding-bottom: 0;
-  padding-left: 60px;
+  padding-right: 45px;
+  padding-left: 52px;
 }
 
 .header-nav__item {
   display: block;
-  padding: 6px 0;
+  padding: 6px 10px;
   font-family: "Gilroy", Arial, sans-serif;
   font-weight: 800;
   font-size: 18px;
@@ -342,12 +341,18 @@ body {
  transform: rotate(90deg);
 }
 
-.header-nav__item--insurance {
-  margin-left: 35px;
+.header-nav__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  width: 523px;
 }
 
-.header-nav__item--contacts {
-  margin-left: 107px;
+.header-nav__item--delivery {
+  margin-right: 15px;
+}
+
+.header-nav__item--insurance {
+  margin-right: auto;
 }
 
 /* ********************************************************** */
@@ -376,7 +381,7 @@ body {
   margin-right: 40px;
 }
 
- .header-menu__link {
+.header-menu__link {
   display: block;
   font-size: 15px;
   line-height: 36px;
@@ -523,7 +528,7 @@ body {
 .slider__info {
   position: relative;
   box-sizing: border-box;
-  padding-top: 32px;
+  padding-top: 33px;
   padding-left: 21px;
   width: 50%;
 }
@@ -560,6 +565,7 @@ body {
 .slider__btn {
   width: 220px;
   margin-bottom: 17px;
+  margin-left: 4px;
 }
 
 .slider__desc {
@@ -716,13 +722,13 @@ body {
   margin-right: 115px;
 }
 
-.support__nav::after {
+.support__container::after {
   content: "";
   position: absolute;
-  top: -81px;
-  right: 0;
+  top: -101px;
+  left: 280px;
   width: 7px;
-  min-height: 320px;
+  min-height: 318px;
   background-color: #000;
 }
 
@@ -760,7 +766,7 @@ body {
 
 .support__nav label:hover::after {
   top: 0px;
-  height: 40px;
+  height: 100%;
   background-color: #f0c52e;
 }
 
@@ -774,7 +780,7 @@ body {
 .support__btn-2:checked ~ .support__nav label[for="support-2"]::after,
 .support__btn-3:checked ~ .support__nav label[for="support-3"]::after {
   top: 0;
-  height: 40px;
+  height: 100%;
   width: 280px;
   background-color: #000;
 }
@@ -1333,6 +1339,7 @@ body {
   font-size: 14px;
   line-height: 22px;
   color: #000;
+  vertical-align: top;
   opacity: 0.2;
 }
 
