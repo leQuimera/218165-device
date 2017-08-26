@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <title>HTML Academy: Девайс</title>
   <link href="css/normalize.css" rel="stylesheet">
-  <link href="css/style.css" rel="stylesheet">
+  <link href="css/style.min.css" rel="stylesheet">
 </head>
 
 <body>
@@ -96,7 +96,10 @@
         </div>
         <div class="slider__info">
           <h3>Делай селфи,<br> как Бен Стиллер!</h3>
-          <p>Самая длинная палка для селфи доступна в нашем магазине. <br>Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
+          <div class="slider__text-field">
+            <p>Самая длинная палка для селфи доступна в нашем магазине.</p>
+            <p>Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
+          </div>
           <a href="#" class="slider__btn btn">Подробнее</a>
           <ul class="slider__desc">
             <li>
@@ -120,7 +123,9 @@
         </div>
         <div class="slider__info">
           <h3>Худеем<br>правильно!</h3>
-          <p>Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
+          <div class="slider__text-field">
+            <p>Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
+          </div>
           <a href="#" class="slider__btn btn">Подробнее</a>
           <ul class="slider__desc">
             <li>
@@ -135,8 +140,10 @@
           <img src="img/slider-3.png" width="526" height="334" alt="Квадрокоптер">
         </div>
         <div class="slider__info">
-          <h3>Порхает как бабочка,<br>жалит как пчела!</h3>
-          <p>Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
+          <h3>Порхает как бабочка, жалит как пчела!</h3>
+          <div class="slider__text-field">
+            <p>Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
+          </div>
           <a href="#" class="slider__btn btn">Подробнее</a>
           <ul class="slider__desc">
             <li>
@@ -161,7 +168,7 @@
     <h2 class="visually-hidden">Разделы каталога</h2>
     <ul class="shop__list">
       <li><a href="catalog.html" class="shop__item shop__item--real">Виртуальная реальность</a></li>
-      <li><a href="catalog.html" class="shop__item shop__item--mono">Моноподы<br>для селфи</a></li>
+      <li><a href="catalog.html" class="shop__item shop__item--mono">Моноподы для селфи</a></li>
       <li><a href="catalog.html" class="shop__item shop__item--cam">Экшн-камеры</a></li>
       <li><a href="catalog.html" class="shop__item shop__item--jav">Фитнес-браслеты</a></li>
       <li><a href="catalog.html" class="shop__item shop__item--watch">Умные часы</a></li>
@@ -186,7 +193,7 @@
         </li>
         <li class="support__item support__item--2">
           <h3>Гарантия</h3>
-          <p>Если из-за возгарания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый. Товар, не дом, конечно же.</p>
+          <p>Если из-за возгарания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый.<br>Товар, не дом, конечно же.</p>
         </li>
         <li class="support__item support__item--3">
           <h3>Кредит</h3>
