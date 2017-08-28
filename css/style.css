@@ -2065,6 +2065,11 @@ body {
   resize: none;
 }
 
+.modal-form textarea {
+  width: 100%;
+  min-height: 155px;
+}
+
 .modal-form__field:hover {
   background-color: #eaeaea;
 }
